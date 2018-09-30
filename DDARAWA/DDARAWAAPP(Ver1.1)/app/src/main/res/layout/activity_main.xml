@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100px"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DDARAWA"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_below="@+id/logo"
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:hint="Enter your address!(ex.흑석동)"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/main_startBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/address"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

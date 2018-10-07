@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/oneText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오늘의 데이트 장소!  "
+                android:textSize="15sp"
+                android:textColor="#ff7a7a"
+                android:layout_below="@+id/logo"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/date_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="장소"
+                android:textSize="20sp"
+                android:textColor="#ff7a7a"
+                android:layout_below="@+id/logo"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/date_title"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오늘은 어떤 데이트를 하고 싶나요?"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_below="@+id/logo"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:id="@+id/date_start_time"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF9E9B"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:text="데이트 시작 시간"
+            />
+        <Button
+            android:id="@+id/date_end_time"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF9E9B"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:text="데이트 종료 시간"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/check_1"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="맛집"/>
+            <CheckBox
+                android:id="@+id/check_2"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="카페"/>
+            <CheckBox
+                android:id="@+id/check_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="놀거리"/>
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:entries="@array/type"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff7a7a"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:text="제출"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

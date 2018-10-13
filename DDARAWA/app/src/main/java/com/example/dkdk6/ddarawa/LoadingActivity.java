@@ -97,7 +97,8 @@ public class LoadingActivity extends AppCompatActivity implements Serializable {
 
     private void fillCityPopulation() {
         /*Http통신해서 내용 받아온 뒤 채워줘야함.*/
-        Retrofit client = new Retrofit.Builder().baseUrl("http://openapi.seoul.go.kr:8088/5479654f78646b643131366e7a716a43/json/SPOP_LOCAL_RESD_DONG/1/500/")
+        Retrofit client = new Retrofit.Builder()
+                .baseUrl("http://openapi.seoul.go.kr:8088/5479654f78646b643131366e7a716a43/json/SPOP_LOCAL_RESD_DONG/1/500/")
                 .addConverterFactory(GsonConverterFactory.create()).build();
         PopulationService ps = client.create(PopulationService.class);
 
@@ -111,6 +112,7 @@ public class LoadingActivity extends AppCompatActivity implements Serializable {
             @Override
             public void onResponse(Call<Population> call, Response<Population> response) {
                 population = response.body();
+                Log.d("Data 갱신 일자 :", population.sPOPLOCALRESDDONG.row.get(0).sTDRDEID.toString());
                 for (int k = 0; k < cityList.size(); k++) {
                     for (int j = 0; j < population.sPOPLOCALRESDDONG.row.size(); j++) {
                         String temp = population.sPOPLOCALRESDDONG.row.get(j).aDSTRDCODESE.toString().trim();
@@ -135,7 +137,7 @@ public class LoadingActivity extends AppCompatActivity implements Serializable {
                 }
 
                 for (int d=0; d<cityList.size(); d++){
-                    Log.e("FINAL", cityList.get(d).population+"<"+d);
+                    Log.e("POPULATION:", cityList.get(d).CityName+" : "+cityList.get(d).population+"<"+d);
                 }
 
                 Intent intent = new Intent(LoadingActivity.this, MainActivity.class);

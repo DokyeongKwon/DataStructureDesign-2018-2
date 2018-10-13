@@ -58,7 +58,7 @@ public class TagActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tag);
         /*Date 받아오기*/
         data = getIntent().getStringExtra("city");
-        Log.d("Tag", data);
+        Log.d("선택 행정구역 : ", data);
 
         String[] splitData = data.split(":");
         if(splitData.length>1){
@@ -293,7 +293,7 @@ public class TagActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<SeoulFineDust> call, Response<SeoulFineDust> response) {
                 SeoulDust = response.body();
-                Log.e("Retrofit_Seoul",SeoulDust.getForecastWarningUltrafineParticleOfDustService().getRow().get(0).getCAISTEP());
+                Log.e("Retrofit_Seoul 초미세먼지 : ",SeoulDust.getForecastWarningUltrafineParticleOfDustService().getRow().get(0).getCAISTEP());
                 seoul_fine_result = SeoulDust.getForecastWarningUltrafineParticleOfDustService().getRow().get(0).getCAISTEP();
             }
 
@@ -313,7 +313,7 @@ public class TagActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<FineDust> call, Response<FineDust> response) {
                 fineDust = response.body();
-                Log.e("Retrofit_City",fineDust.getListAirQualityByDistrictService().getRow().get(0).getGRADE().toString());
+                Log.e("Retrofit_", data+" 초미세먼지 : "+fineDust.getListAirQualityByDistrictService().getRow().get(0).getGRADE().toString());
                 fine_result = fineDust.getListAirQualityByDistrictService().getRow().get(0).getGRADE().toString();
             }
 

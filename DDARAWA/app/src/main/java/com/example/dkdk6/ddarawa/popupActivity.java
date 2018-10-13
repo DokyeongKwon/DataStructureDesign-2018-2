@@ -30,9 +30,10 @@ public class popupActivity extends Activity {
         //데이터 가져오기
         Intent intent = getIntent();
         place = (Place)intent.getSerializableExtra("data");
-
-        txtText.setText(place.title);
-        review.setText(place.review);
+        if(place.title!=null && place.review!=null){
+            txtText.setText(place.title);
+            review.setText(place.review);
+        }
     }
 
     //확인 버튼 클릭

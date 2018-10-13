@@ -14,10 +14,8 @@ public class City implements Parcelable{
     String population_Code;
     String subCityName;
     String fineDust;
-    Double population;
-
+      Double population;
     public City(){}
-
     protected City(Parcel in) {
         CityName = in.readString();
         x_axis = in.readDouble();
@@ -28,7 +26,6 @@ public class City implements Parcelable{
         fineDust = in.readString();
         population = in.readDouble();
     }
-
     public static final Creator<City> CREATOR = new Creator<City>() {
         @Override
         public City createFromParcel(Parcel in) {
@@ -40,12 +37,10 @@ public class City implements Parcelable{
             return new City[size];
         }
     };
-
     @Override
     public int describeContents() {
         return 0;
     }
-
     @Override
     public void writeToParcel(Parcel parcel, int i) {
         parcel.writeString(CityName);

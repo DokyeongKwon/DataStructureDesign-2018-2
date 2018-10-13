@@ -275,11 +275,11 @@ public class SearchingActivity extends AppCompatActivity {
             /*가중치 계산하기*/
             for(int a=0; a<placesNodeList.size(); a++){
                 if (placesNodeList.get(a).connected == true) {
-                    if (dateType == 0 && (placesNodeList.get(a).tag.equals("2001") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
+                    if (dateType == 0 && (placesNodeList.get(a).tag.equals("2005") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
                         Log.d("차분한", "데이트");
                         placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(startX, startY)) / (fineDustLevel) / 4;
 
-                    } else if (dateType == 1 &&(placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2005")|| placesNodeList.get(a).tag.equals("2006"))) {
+                    } else if (dateType == 1 &&(placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2001")|| placesNodeList.get(a).tag.equals("2006"))) {
                         Log.d("신나는", "데이트");
                         placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(startX, startY)) / (fineDustLevel) / 4;
                     }
@@ -413,11 +413,11 @@ public class SearchingActivity extends AppCompatActivity {
             /*가중치 계산하기*/
             for (int a = 0; a < placesNodeList.size(); a++) {
                 if (placesNodeList.get(a).connected == true) {
-                    if (dateType == 0 && (placesNodeList.get(a).tag.equals("2001") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
+                    if (dateType == 0 && (placesNodeList.get(a).tag.equals("2005") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
                         Log.d("차분한", "데이트");
                         placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(startX, startY)) / (fineDustLevel) / 4;
 
-                    } else if (dateType == 1 && (placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2005") || placesNodeList.get(a).tag.equals("2006"))) {
+                    } else if (dateType == 1 && (placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2001") || placesNodeList.get(a).tag.equals("2006"))) {
                         Log.d("신나는", "데이트");
                         placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(startX, startY)) / (fineDustLevel) / 4;
                     }
@@ -516,11 +516,11 @@ public class SearchingActivity extends AppCompatActivity {
             /*가중치 계산하기*/
                 for (int a = 0; a < placesNodeList.size(); a++) {
                     if (placesNodeList.get(a).connected == true) {
-                        if (dateType == 0 && (placesNodeList.get(a).tag.equals("2001") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
+                        if (dateType == 0 && (placesNodeList.get(a).tag.equals("2005") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
                             Log.d("차분한", "데이트");
                             placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(firstNode)) / (fineDustLevel) / 4;
 
-                        } else if (dateType == 1 && (placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2005") || placesNodeList.get(a).tag.equals("2006"))) {
+                        } else if (dateType == 1 && (placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2001") || placesNodeList.get(a).tag.equals("2006"))) {
                             Log.d("신나는", "데이트");
                             placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(firstNode)) / (fineDustLevel) / 4;
                         }
@@ -629,11 +629,11 @@ public class SearchingActivity extends AppCompatActivity {
             /*가중치 계산하기*/
                 for (int a = 0; a < placesNodeList.size(); a++) {
                     if (placesNodeList.get(a).connected == true) {
-                        if (dateType == 0 && (placesNodeList.get(a).tag.equals("2001") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
+                        if (dateType == 0 && (placesNodeList.get(a).tag.equals("2005") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
                             Log.d("차분한", "데이트");
                             placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(startX, startY)) / (fineDustLevel) / 4;
 
-                        } else if (dateType == 1 && (placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2005") || placesNodeList.get(a).tag.equals("2006"))) {
+                        } else if (dateType == 1 && (placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2001") || placesNodeList.get(a).tag.equals("2006"))) {
                             Log.d("신나는", "데이트");
                             placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(startX, startY)) / (fineDustLevel) / 4;
                         }
@@ -761,11 +761,11 @@ public class SearchingActivity extends AppCompatActivity {
             /*가중치 계산하기*/
             for (int a = 0; a < placesNodeList.size(); a++) {
                 if (placesNodeList.get(a).connected == true) {
-                    if (dateType == 0 && (placesNodeList.get(a).tag.equals("2001") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
+                    if (dateType == 0 && (placesNodeList.get(a).tag.equals("2005") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
                         Log.d("차분한", "데이트");
                         placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(startX, startY)) / (fineDustLevel) / 4;
 
-                    } else if (dateType == 1 && (placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2005") || placesNodeList.get(a).tag.equals("2006"))) {
+                    } else if (dateType == 1 && (placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2001") || placesNodeList.get(a).tag.equals("2006"))) {
                         Log.d("신나는", "데이트");
                         placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(startX, startY)) / (fineDustLevel) / 4;
                     }
@@ -866,11 +866,11 @@ public class SearchingActivity extends AppCompatActivity {
             /*가중치 계산하기*/
                 for (int a = 0; a < placesNodeList.size(); a++) {
                     if (placesNodeList.get(a).connected == true) {
-                        if (dateType == 0 && (placesNodeList.get(a).tag.equals("2001") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
+                        if (dateType == 0 && (placesNodeList.get(a).tag.equals("2005") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
                             Log.d("차분한", "데이트");
                             placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(firstNode)) / (fineDustLevel) / 4;
 
-                        } else if (dateType == 1 && (placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2005") || placesNodeList.get(a).tag.equals("2006"))) {
+                        } else if (dateType == 1 && (placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2001") || placesNodeList.get(a).tag.equals("2006"))) {
                             Log.d("신나는", "데이트");
                             placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(firstNode)) / (fineDustLevel) / 4;
                         }
@@ -980,11 +980,11 @@ public class SearchingActivity extends AppCompatActivity {
             /*가중치 계산하기*/
                 for (int a = 0; a < placesNodeList.size(); a++) {
                     if (placesNodeList.get(a).connected == true) {
-                        if (dateType == 0 && (placesNodeList.get(a).tag.equals("2001") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
+                        if (dateType == 0 && (placesNodeList.get(a).tag.equals("2005") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
                             Log.d("차분한", "데이트");
                             placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(startX, startY)) / (fineDustLevel) / 4;
 
-                        } else if (dateType == 1 && (placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2005") || placesNodeList.get(a).tag.equals("2006"))) {
+                        } else if (dateType == 1 && (placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2001") || placesNodeList.get(a).tag.equals("2006"))) {
                             Log.d("신나는", "데이트");
                             placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(startX, startY)) / (fineDustLevel) / 4;
                         }
@@ -1083,11 +1083,11 @@ public class SearchingActivity extends AppCompatActivity {
             /*가중치 계산하기*/
                 for (int a = 0; a < placesNodeList.size(); a++) {
                     if (placesNodeList.get(a).connected == true) {
-                        if (dateType == 0 && (placesNodeList.get(a).tag.equals("2001") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
+                        if (dateType == 0 && (placesNodeList.get(a).tag.equals("2005") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
                             Log.d("차분한", "데이트");
                             placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(secondNode)) / (fineDustLevel) / 4;
 
-                        } else if (dateType == 1 && (placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2005") || placesNodeList.get(a).tag.equals("2006"))) {
+                        } else if (dateType == 1 && (placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2001") || placesNodeList.get(a).tag.equals("2006"))) {
                             Log.d("신나는", "데이트");
                             placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(secondNode)) / (fineDustLevel) / 4;
                         }
@@ -1193,11 +1193,11 @@ public class SearchingActivity extends AppCompatActivity {
             /*가중치 계산하기*/
                 for (int a = 0; a < placesNodeList.size(); a++) {
                     if (placesNodeList.get(a).connected == true) {
-                        if (dateType == 0 && (placesNodeList.get(a).tag.equals("2001") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
+                        if (dateType == 0 && (placesNodeList.get(a).tag.equals("2005") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
                             Log.d("차분한", "데이트");
                             placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(startX, startY)) / (fineDustLevel) / 4;
 
-                        } else if (dateType == 1 && (placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2005") || placesNodeList.get(a).tag.equals("2006"))) {
+                        } else if (dateType == 1 && (placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2001") || placesNodeList.get(a).tag.equals("2006"))) {
                             Log.d("신나는", "데이트");
                             placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(startX, startY)) / (fineDustLevel) / 4;
                         }
@@ -1291,11 +1291,11 @@ public class SearchingActivity extends AppCompatActivity {
             /*가중치 계산하기*/
                 for (int a = 0; a < placesNodeList.size(); a++) {
                     if (placesNodeList.get(a).connected == true) {
-                        if (dateType == 0 && (placesNodeList.get(a).tag.equals("2001") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
+                        if (dateType == 0 && (placesNodeList.get(a).tag.equals("2005") || placesNodeList.get(a).tag.equals("2002") || placesNodeList.get(a).tag.equals("2003"))) {
                             Log.d("차분한", "데이트");
                             placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(firstNode)) / (fineDustLevel) / 4;
 
-                        } else if (dateType == 1 && (placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2005") || placesNodeList.get(a).tag.equals("2006"))) {
+                        } else if (dateType == 1 && (placesNodeList.get(a).tag.equals("2004") || placesNodeList.get(a).tag.equals("2001") || placesNodeList.get(a).tag.equals("2006"))) {
                             Log.d("신나는", "데이트");
                             placesNodeList.get(a).weight = (placesNodeList.get(a).computeDistance(firstNode)) / (fineDustLevel) / 4;
                         }
@@ -1430,8 +1430,14 @@ public class SearchingActivity extends AppCompatActivity {
                 tempPlace.startHour = Integer.parseInt(time1[0]);
                 tempPlace.startMinute = Integer.parseInt(time1[1]);
                 String[] time2 = infoStream[6].split(":");
-                tempPlace.endHour = Integer.parseInt(time2[0]);
-                tempPlace.endMinute = Integer.parseInt(time2[1]);
+                if(time2.length<1){
+                    tempPlace.endHour=0;
+                    tempPlace.endMinute=0;
+                }else{
+                    tempPlace.endHour = Integer.parseInt(time2[0]);
+                    tempPlace.endMinute = Integer.parseInt(time2[1]);
+                }
+
                 if(infoStream[7].equals("0")||infoStream[8].equals("0")){
                     tempPlace.breakStartHour = 0;
                     tempPlace.breakStartMinute = 0;
@@ -1450,9 +1456,8 @@ public class SearchingActivity extends AppCompatActivity {
                     String[] rest_temp = infoStream[9].split(",");
                     for(int c=0; c<rest_temp.length; c++){
                         int temp = Integer.parseInt(rest_temp[c]);
-                        tempPlace.restDay[temp] = 1;
+                        tempPlace.restDay[temp-1] = 1;
                     }
-
                 }else{
                     if(!(infoStream[9].equals("0"))){
                         int restDay = Integer.parseInt(infoStream[9]);

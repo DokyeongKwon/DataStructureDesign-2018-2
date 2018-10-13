@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
             myAddress = splitData[2];
         }
 
-       // Log.d("ADDRESS", myAddress);
+        Log.d("현재 위치 : ", myAddress);
 
 
         for(int a=0; a<RcityList.size(); a++){
